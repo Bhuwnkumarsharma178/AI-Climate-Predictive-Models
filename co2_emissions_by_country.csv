@@ -1,0 +1,31 @@
+Country,Year,CO2_Emissions,Per_Capita_Emissions,Emission_Sector
+USA,2000,7441.35,5.28,Industry
+USA,2021,7432.61,11.13,Residential
+Canada,2001,394.99,4.76,Residential
+Japan,2000,5656.33,14.46,Residential
+Canada,2007,4547.17,5.92,Energy
+China,2022,4283.88,5.92,Industry
+Australia,2003,1018.18,2.39,Transport
+Japan,2008,8090.57,14.73,Residential
+USA,2012,880.12,6.22,Residential
+Australia,2018,2003.66,1.86,Industry
+Germany,2002,8567.65,17.4,Agriculture
+Germany,2014,6393.28,7.61,Transport
+Australia,2006,6734.73,14.19,Energy
+Japan,2020,1794.27,14.72,Industry
+South Africa,2012,2772.48,18.55,Residential
+Brazil,2021,3310.4,15.48,Energy
+Brazil,2001,8069.95,8.32,Energy
+Brazil,2018,8776.04,6.64,Agriculture
+Canada,2020,4642.63,5.67,Industry
+Russia,2017,2701.14,11.9,Residential
+Canada,2011,2271.28,19.95,Residential
+South Africa,2002,7582.24,17.29,Industry
+China,2021,4279.38,1.74,Agriculture
+Japan,2014,5338.23,19.44,Energy
+USA,2021,8859.41,15.14,Transport
+USA,2009,4404.18,9.35,Transport
+Russia,2005,5126.05,2.58,Transport
+Russia,2019,2069.22,7.79,Industry
+Russia,2016,9193.09,12.18,Agriculture
+India,2003,9298.08,17.64,Transport

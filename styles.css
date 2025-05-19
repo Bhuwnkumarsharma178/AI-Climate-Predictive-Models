@@ -1,0 +1,234 @@
+:root {
+    --ios-background: #f2f2f7;
+    --ios-card: #ffffff;
+    --ios-primary: #007AFF;
+    --ios-text: #1c1c1e;
+    --ios-secondary: #6c757d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: var(--ios-background);
+    color: var(--ios-text);
+    line-height: 1.6;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #007AFF, #5856D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ios-card {
+    background: var(--ios-card);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.ios-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Jarvis Assistant Styles */
+.jarvis-assistant {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.jarvis-circle {
+    width: 60px;
+    height: 60px;
+    background: #007AFF;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
+}
+
+.jarvis-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.jarvis-message {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-right: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    display: none;
+}
+
+/* Upload Section Styles */
+.upload-box {
+    border: 2px dashed var(--ios-primary);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    background: rgba(0, 122, 255, 0.05);
+}
+
+.upload-box i {
+    font-size: 3rem;
+    color: var(--ios-primary);
+    margin-bottom: 1rem;
+}
+
+.upload-box input[type="file"] {
+    display: none;
+}
+
+/* Model Accuracy Styles */
+.accuracy-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.accuracy-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(var(--ios-primary) 95.7%, #e0e0e0 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.accuracy-circle::before {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: white;
+    border-radius: 50%;
+}
+
+#accuracy-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--ios-primary);
+    position: relative;
+    z-index: 1;
+}
+
+.accuracy-label {
+    font-size: 0.9rem;
+    color: var(--ios-secondary);
+    position: relative;
+    z-index: 1;
+}
+
+.confidence-meter {
+    width: 50%;
+}
+
+.meter-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.meter-bar::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 95.7%;
+    background: linear-gradient(90deg, #007AFF, #5856D6);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Chart Controls */
+.chart-controls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.ios-button {
+    background: var(--ios-primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.ios-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0.9;
+    }
+}

@@ -1,0 +1,6 @@
+Region,Year,CO2_Emissions_Mt,Avg_Temperature_C,Precipitation_mm,Sea_Level_Rise_mm,ML_Model_Used,Model_Accuracy_%,Impact_Score
+North America,2020,5000,13.5,900,3.2,Random Forest,89.5,7.8
+Europe,2020,4200,10.8,850,2.9,Linear Regression,84.3,6.5
+Asia,2020,11200,22.4,1000,3.5,Neural Network,91.7,8.9
+Africa,2020,1300,25.1,1200,3.1,SVM,86.4,5.9
+South America,2020,1700,24.3,1100,3.0,Gradient Boosting,90.2,7.4

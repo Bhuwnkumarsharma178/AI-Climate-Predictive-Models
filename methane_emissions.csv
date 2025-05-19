@@ -1,0 +1,31 @@
+Country,Year,CH4_Emissions,Source_Sector
+Brazil,2001,128.03,Agriculture
+USA,2023,248.14,Agriculture
+Russia,2004,72.91,Livestock
+Russia,2005,139.88,Livestock
+Brazil,2017,380.08,Waste
+Germany,2012,497.62,Fossil Fuels
+South Africa,2016,231.23,Waste
+Brazil,2002,175.66,Waste
+Japan,2007,13.52,Agriculture
+Brazil,2002,453.66,Fossil Fuels
+USA,2016,126.62,Livestock
+Brazil,2017,74.83,Livestock
+Brazil,2015,405.67,Waste
+USA,2003,332.9,Fossil Fuels
+Canada,2013,238.84,Agriculture
+USA,2001,207.28,Fossil Fuels
+USA,2007,103.88,Livestock
+China,2013,99.91,Livestock
+Brazil,2002,227.13,Agriculture
+India,2020,499.65,Agriculture
+USA,2007,91.49,Livestock
+South Africa,2006,433.68,Agriculture
+China,2012,11.06,Livestock
+Germany,2014,149.77,Livestock
+China,2006,155.39,Agriculture
+Japan,2023,275.68,Fossil Fuels
+India,2001,296.25,Waste
+India,2016,49.25,Waste
+USA,2019,43.3,Waste
+Canada,2003,471.38,Waste

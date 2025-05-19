@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & ML in Climate Change</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <!-- Jarvis Assistant -->
+    <div class="jarvis-assistant" id="jarvis">
+        <div class="jarvis-circle">
+            <div class="jarvis-ring"></div>
+        </div>
+        <div class="jarvis-message" id="jarvis-message">
+            Hello! I'm Jarvis. How can I assist you today?
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1>AI & Machine Learning in Climate Change</h1>
+            <p>Predictive Models and Environmental Impact Analysis</p>
+        </header>
+
+        <!-- Upload Section -->
+        <section class="upload-section ios-card">
+            <h2>Data Upload</h2>
+            <div class="upload-box" id="upload-box">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag & Drop your climate data files here</p>
+                <input type="file" id="file-upload" accept=".csv, .json, .xlsx">
+            </div>
+            <div class="upload-status" id="upload-status"></div>
+        </section>
+
+        <!-- Model Accuracy Section -->
+        <section class="accuracy-section ios-card">
+            <h2>Model Performance</h2>
+            <div class="accuracy-display">
+                <div class="accuracy-circle">
+                    <span id="accuracy-value">95.7%</span>
+                    <span class="accuracy-label">Model Accuracy</span>
+                </div>
+                <div class="confidence-meter">
+                    <span>Prediction Confidence</span>
+                    <div class="meter-bar" id="confidence-meter"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Visualization Section -->
+        <section class="visualization-section ios-card">
+            <h2>Data Visualization</h2>
+            <div class="chart-container">
+                <canvas id="climateChart"></canvas>
+            </div>
+            <div class="chart-controls">
+                <button class="ios-button" onclick="updateChart('temperature')">Temperature</button>
+                <button class="ios-button" onclick="updateChart('emissions')">Emissions</button>
+                <button class="ios-button" onclick="updateChart('predictions')">Predictions</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
